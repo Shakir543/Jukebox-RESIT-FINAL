@@ -85,7 +85,7 @@ namespace JukeBox
                 bool_Requires_Saving = true;
                 OpenFileDialog newDialogue = new OpenFileDialog();
                 newDialogue.Title = "Import Track";
-                newDialogue.Filter = "Music files (*.mp3, *.wma) | *.mp3; *.wma";//Only will import mp3 and wma files
+                newDialogue.Filter = "Music files (*.mp3, *.wma) | *.mp3; *.wma";//Only will import mp3 and wma files ( easier formatting)
                 if (newDialogue.ShowDialog() == DialogResult.OK)
                 {
                     Imported_tracks.Items.Add(newDialogue.SafeFileName.ToString());
@@ -108,7 +108,7 @@ namespace JukeBox
             result = MessageBox.Show(message, error, buttons);
             if (result == System.Windows.Forms.DialogResult.Yes) //if yes clicked then closes setup form and if no is pressed then only closes the popup
             {
-                this.Close();
+                this.Close(); // closes the form.
             }
         }
 
@@ -163,7 +163,7 @@ namespace JukeBox
                 TrackList.Items.Add(Imported_tracks.Text);
             }
             else
-                MessageBox.Show("You Must Select an Item to Copy");
+                MessageBox.Show("An item must be selected to Copy");
 
         }
 
