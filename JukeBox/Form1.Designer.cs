@@ -66,7 +66,7 @@ namespace JukeBox
             this.Playlist.FormattingEnabled = true;
             this.Playlist.ItemHeight = 31;
             this.Playlist.Location = new System.Drawing.Point(392, 746);
-            this.Playlist.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Playlist.Margin = new System.Windows.Forms.Padding(6);
             this.Playlist.Name = "Playlist";
             this.Playlist.Size = new System.Drawing.Size(430, 252);
             this.Playlist.TabIndex = 1;
@@ -75,7 +75,7 @@ namespace JukeBox
             // 
             this.playingNow.BackColor = System.Drawing.Color.Lime;
             this.playingNow.Location = new System.Drawing.Point(366, 680);
-            this.playingNow.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.playingNow.Margin = new System.Windows.Forms.Padding(6);
             this.playingNow.Name = "playingNow";
             this.playingNow.ReadOnly = true;
             this.playingNow.Size = new System.Drawing.Size(482, 38);
@@ -93,7 +93,7 @@ namespace JukeBox
             this.GenreName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.GenreName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenreName.Location = new System.Drawing.Point(366, 424);
-            this.GenreName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.GenreName.Margin = new System.Windows.Forms.Padding(6);
             this.GenreName.Name = "GenreName";
             this.GenreName.ReadOnly = true;
             this.GenreName.Size = new System.Drawing.Size(482, 37);
@@ -105,8 +105,8 @@ namespace JukeBox
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(24, 1461);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Location = new System.Drawing.Point(15, 1451);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(180, 56);
             this.button1.TabIndex = 7;
@@ -117,7 +117,7 @@ namespace JukeBox
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(4, 1451);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(6);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(1242, 62);
             this.richTextBox1.TabIndex = 8;
@@ -128,8 +128,8 @@ namespace JukeBox
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(192, 1461);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button2.Location = new System.Drawing.Point(238, 1451);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(194, 56);
             this.button2.TabIndex = 9;
@@ -141,7 +141,7 @@ namespace JukeBox
             // 
             this.MediaPlayer.Enabled = true;
             this.MediaPlayer.Location = new System.Drawing.Point(148, 131);
-            this.MediaPlayer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MediaPlayer.Margin = new System.Windows.Forms.Padding(6);
             this.MediaPlayer.Name = "MediaPlayer";
             this.MediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("MediaPlayer.OcxState")));
             this.MediaPlayer.Size = new System.Drawing.Size(318, 46);
@@ -159,7 +159,7 @@ namespace JukeBox
             this.Genrelist.FormattingEnabled = true;
             this.Genrelist.ItemHeight = 31;
             this.Genrelist.Location = new System.Drawing.Point(366, 471);
-            this.Genrelist.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Genrelist.Margin = new System.Windows.Forms.Padding(6);
             this.Genrelist.Name = "Genrelist";
             this.Genrelist.Size = new System.Drawing.Size(482, 159);
             this.Genrelist.TabIndex = 11;
@@ -194,7 +194,7 @@ namespace JukeBox
             this.Controls.Add(this.label1);
             this.Controls.Add(this.richTextBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Jukebox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Juke Box v1.0";
