@@ -18,7 +18,7 @@ namespace JukeBox
     public partial class Jukebox : Form
 
     {
-        int currentGenre = 0; // creates an int for the current genres
+        int currentGenre = 0; // Shows the current genre
 
 
         public Jukebox()
@@ -202,9 +202,9 @@ namespace JukeBox
     }
 }
 
+// Sometimes the application requires resizing when starting it, so everything will appear :), I think it was an issue with my laptop too.
 
-
-                                //Assignment by Shakir Shabbir B7021334
+                                //Assignment by Shakir Shabbir b7021334
 
 
 
