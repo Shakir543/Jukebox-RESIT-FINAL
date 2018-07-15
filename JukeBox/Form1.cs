@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
-//When application is opened the genres and tracks wont appear until you move the scrollbar and then will appear.
+//When application is opened the genres and tracks wont appear until you move the scrollbar and then will appear. This was kind of a bug I couldn't fix.
 //
 
 namespace JukeBox
@@ -18,7 +18,7 @@ namespace JukeBox
     public partial class Jukebox : Form
 
     {
-        int currentGenre = 0; 
+        int currentGenre = 0; // creates an int for the current genres
 
 
         public Jukebox()
@@ -50,7 +50,7 @@ namespace JukeBox
         private void Main_Load(object sender, EventArgs e)
         {
 
-            update(); //updates the main from
+            update(); //updates the main from and essentially saves any changes
         }
 
         private void update()
@@ -58,7 +58,7 @@ namespace JukeBox
             List<List<string>> genre = readFile(); 
             GenreName.Text = genre[currentGenre][1].ToString();
 
-            UpdateGenrelist();
+            UpdateGenrelist(); 
 
 
         }
@@ -166,15 +166,15 @@ namespace JukeBox
             if (ChooseGenre.Value == 0)
             {
                 Genrelist.Items.Clear();
-                GenreName.Text = "OST";
-                Genrelist.Items.Add("Boku No Hero Hero A.mp3");
+                GenreName.Text = "OST"; 
+                Genrelist.Items.Add("Fullmetal Alchemist Brotherhood Opening 1-Again creditless.mp3");
             }
             else if (ChooseGenre.Value == 10) //The Value = scroll bar pressed twice to show next set off genre and tracks
             {
                 Genrelist.Items.Clear(); //Clears previous items so new other one can appear
-                GenreName.Text = "BTS"; // The genre title
-                Genrelist.Items.Add("BTS DNA.mp3"); //adds track to genrelist
-                Genrelist.Items.Add("BTS Mic Drop Remix.mp3"); //Adds track to the genrelist
+                GenreName.Text = "SCORPION"; // The genre title
+                Genrelist.Items.Add("Drake - Gods Plan (Official Audio).mp3"); //adds track to genrelist
+                Genrelist.Items.Add("Drake - In My Feelings (Official Audio) (Scorpion Album).mp3"); //Adds track to the genrelist
             }
             else if (ChooseGenre.Value == 20)
             {
