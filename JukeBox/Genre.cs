@@ -46,7 +46,7 @@ namespace JukeBox
         private void button1_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(enterGenre.Text))
-                MessageBox.Show("You must give the Genre a Title");
+                MessageBox.Show("You must give the Genre a Title"); // experimented with this never got it to fully function
             else
             {
               
@@ -54,6 +54,11 @@ namespace JukeBox
             
             }
             
+        }
+
+        private void Genre_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
